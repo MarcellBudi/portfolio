@@ -29,4 +29,4 @@ hamburger.addEventListener('click', function() {
 
 const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
-  });
+});
