@@ -60,7 +60,7 @@
                         <img src="dist/img/marcell-budi-putra.png" alt="Marcell Budi" class="max-w-full mx-auto">
                         <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
                             <svg width="300" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#FF0066" d="M54.6,-17.1C62.7,7.2,55.6,37.1,34.4,54.2C13.1,71.3,-22.5,75.6,-41,61C-59.5,46.5,-60.9,13.1,-51.2,-13.3C-41.6,-39.8,-20.8,-59.3,1.2,-59.7C23.2,-60.1,46.4,-41.4,54.6,-17.1Z" transform="translate(100 100)"/>
+                                <path fill="#0ea5e9" d="M54.6,-17.1C62.7,7.2,55.6,37.1,34.4,54.2C13.1,71.3,-22.5,75.6,-41,61C-59.5,46.5,-60.9,13.1,-51.2,-13.3C-41.6,-39.8,-20.8,-59.3,1.2,-59.7C23.2,-60.1,46.4,-41.4,54.6,-17.1Z" transform="translate(100 100)"/>
                             </svg>
                         </span>
                     </div>
@@ -155,7 +155,7 @@
             </div>
           </div>
   
-          <div class="flex w-full flex-wrap justify-center px-4">
+          <div class="flex w-full flex-wrap justify-center">
             <div class="mb-10 p-4 md:w-1/2">
               <div class="overflow-hidden rounded-md shadow-md">
                 <a href="https://github.com/MarcellBudi/website-undangan" target="_blank" class="duration-300 hover:opacity-80 hover:shadow-lg"><img src="dist/img/portfolio/website-undangan.jpg" alt="E-Commerce" width="w-full"/></a>
@@ -304,6 +304,7 @@
     <!-- Contact Section Start -->
     <section id="contact" class="pt-20 pb-16">
       <div class="container">
+        
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">CONTACT</h4>
@@ -314,36 +315,39 @@
         <form name="portfolio-marcell-contact-form">
           <div class="lg:mx-auto lg:w-2/3 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded my-alert relative hidden">
             <strong class="font-bold">Thank you!</strong>
-            <span class="sm:inline">We have received your message.</span>
-
-            <strong class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-3 mr-6 outline-none focus:outline-none cursor-pointer alert-del">&times;</strong>
+            <span class="block sm:inline">We have received your message.</span>
+            <span class="absolute top-0 bottom-0 right-0 px-4 py-3 cursor-pointer alert-del">
+              <svg class="fill-current h-6 w-6 text-green-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+            </span>
           </div>
-
-        </div>
           <div class="w-full lg:mx-auto lg:w-2/3">
-            <div class="mt-5 mb-8 w-full px-5">
+            <div class="mt-5 mb-5 w-full px-4">
               <label for="name" class="text-base font-bold text-primary">Name</label>
               <input type="text" id="name" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" name="name" required/>
             </div>
-            <div class="mb-8 w-full px-5">
+            <div class="mb-8 w-full px-4">
               <label for="email" class="text-base font-bold text-primary">Email</label>
               <input type="email" id="email" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" name="email" required/>
             </div>
-            <div class="mb-8 w-full px-5">
+            <div class="mb-8 w-full px-4">
               <label for="message" class="text-base font-bold text-primary">Message</label>
               <textarea type="email" id="email" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" name="message" required></textarea>
             </div>
-            <div class="w-full px-5">
-              <button type="submit" class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg btn-send">Send</button>
-              <button disabled type="submit" class="text-white bg-primary transition duration-500 hover:opacity-80 hover:shadow-lg w-full font-semibold text-base px-5 py-2.5 text-center rounded-full mr-2 items-center btn-loading hidden">
+            <div class="w-full px-4">
+              <button type="submit" class="w-full rounded-full bg-primary py-2.5 px-5 mr-2 text-base font-semibold text-white items-center transition duration-500 hover:opacity-80 hover:shadow-lg btn-send">
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline mr-3 w-5 h-5 text-white" viewBox="0 0 512 512">
+                  <path fill="white" d="M511.6 36.86l-64 415.1c-1.5 9.734-7.375 18.22-15.97 23.05c-4.844 2.719-10.27 4.097-15.68 4.097c-4.188 0-8.319-.8154-12.29-2.472l-122.6-51.1l-50.86 76.29C226.3 508.5 219.8 512 212.8 512C201.3 512 192 502.7 192 491.2v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96l-293.7 264.3L19.69 317.5C8.438 312.8 .8125 302.2 .0625 289.1s5.469-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"/></svg>
+                Send
+              </button>
+              <button disabled type="submit" class="text-white bg-primary transition duration-500 hover:opacity-80 hover:shadow-lg w-full font-semibold text-base px-5 py-2.5 rounded-full mr-2 items-center btn-loading hidden">
                 <svg role="status" class="inline mr-3 w-5 h-5 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="#E5E7EB"/>
                 <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentColor"/>
                 </svg>
                 Loading...
-              </button>
-              
+              </button>  
             </div>
+
           </div>
         </form>
       </div>
@@ -496,7 +500,7 @@
           x.addEventListener('click', function () {
             x.parentElement.classList.add('hidden')
           })
-        )            
+        )
 
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           .then((response) => {

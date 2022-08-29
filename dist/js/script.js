@@ -27,6 +27,6 @@ hamburger.addEventListener('click', function() {
     navMenu.classList.toggle('hidden');
 });
 
-const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-});
+// const portfolioLightbox = GLightbox({
+//     selector: '.portfolio-lightbox'
+// });
