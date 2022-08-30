@@ -1,0 +1,12 @@
+/* .navbar>ul>li>a:before { */
+    /* content: ""; */
+    /* position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    background-color: rgb(199, 80, 80);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s; */
+/* } */
