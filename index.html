@@ -78,7 +78,7 @@
             <div class="display">
               <a href="#contact" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 duration-200">
                 CONTACT ME 
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline mr-1 ml-3 w-5 h-5 text-white" viewBox="0 0 512 512">
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline ml-2 w-5 h-5 text-white" viewBox="0 0 512 512">
                   <path fill="white" d="M511.6 36.86l-64 415.1c-1.5 9.734-7.375 18.22-15.97 23.05c-4.844 2.719-10.27 4.097-15.68 4.097c-4.188 0-8.319-.8154-12.29-2.472l-122.6-51.1l-50.86 76.29C226.3 508.5 219.8 512 212.8 512C201.3 512 192 502.7 192 491.2v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96l-293.7 264.3L19.69 317.5C8.438 312.8 .8125 302.2 .0625 289.1s5.469-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"/>
                 </svg>
               </a>
@@ -102,7 +102,7 @@
               </p>
 
               <p class="mb-6 text-base font-medium text-dark lg:text-lg" data-aos="fade-right"  data-aos-duration="1000" data-aos-delay="200"> I am a 5th semester Informatics Engineering student at INSTIKI. I have experience in the IT field and follow one of the organizations on campus. Able to create websites for companies, master several programming languages such as JavaScript, PHP, MySQL. I have loved web programming since I was 18 years old, during the 12th grade of high school by creating a simple website. My dream is to become a Software Engineer. There's still a long way to go, so let's see what happens next.😉</p>
-              <div class="flex items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+              <div class="flex items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                 <!-- Youtube -->
                 <a
                   href="https://www.youtube.com/channel/UC8HiRN_Ro3nUKuFwOEeFnkw" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300  hover:border-primary hover:bg-primary hover:text-white">
@@ -358,9 +358,9 @@
             </div>
             <div class="w-full px-4">
               <button type="submit" class="w-full rounded-full bg-primary py-2.5 px-5 mr-2 text-base font-semibold text-white items-center transition duration-500 hover:opacity-80 hover:shadow-lg btn-send">
-                <svg xmlns="http://www.w3.org/2000/svg" class="inline mr-3 w-5 h-5 text-white" viewBox="0 0 512 512">
-                  <path fill="white" d="M511.6 36.86l-64 415.1c-1.5 9.734-7.375 18.22-15.97 23.05c-4.844 2.719-10.27 4.097-15.68 4.097c-4.188 0-8.319-.8154-12.29-2.472l-122.6-51.1l-50.86 76.29C226.3 508.5 219.8 512 212.8 512C201.3 512 192 502.7 192 491.2v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96l-293.7 264.3L19.69 317.5C8.438 312.8 .8125 302.2 .0625 289.1s5.469-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"/></svg>
                 Send
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline ml-2 w-5 h-5 text-white" viewBox="0 0 24 24">
+                  <path fill="white" d="M20.34,9.32l-14-7a3,3,0,0,0-4.08,3.9l2.4,5.37h0a1.06,1.06,0,0,1,0,.82l-2.4,5.37A3,3,0,0,0,5,22a3.14,3.14,0,0,0,1.35-.32l14-7a3,3,0,0,0,0-5.36Zm-.89,3.57-14,7a1,1,0,0,1-1.35-1.3l2.39-5.37A2,2,0,0,0,6.57,13h6.89a1,1,0,0,0,0-2H6.57a2,2,0,0,0-.08-.22L4.1,5.41a1,1,0,0,1,1.35-1.3l14,7a1,1,0,0,1,0,1.78Z"/></svg>
               </button>
               <button disabled type="submit" class="text-white bg-primary transition duration-500 hover:opacity-80 hover:shadow-lg w-full font-semibold text-base px-5 py-2.5 rounded-full mr-2 items-center btn-loading hidden">
                 <svg role="status" class="inline mr-3 w-5 h-5 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -501,28 +501,8 @@
     <!-- Back to top End -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      const mySkills = document.querySelectorAll('.my-skills');
-
-      mySkills.forEach((img, i) => {
-        img.dataset.aos = 'fade-down';
-        img.dataset.aosDelay = i * 50;
-        img.dataset.aosDuration = 1000;
-      });
-      AOS.init({
-        once: true,
-      });
-    </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/TextPlugin.min.js"></script>
-    <script>
-      gsap.registerPlugin(TextPlugin);
-      gsap.to('.lead', {duration: 2, delay: 1.5, text: 'Web Developer & Web Design'});
-      gsap.from('.navbar', {duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' });
-      gsap.from('.display', {duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
-    </script>
-
     <script src="dist/js/script.js"></script>
 
     <script>
@@ -565,6 +545,7 @@
       });
     </script>
 
+    <!-- tilt js -->
     <script type="text/javascript" src="dist/js/vanilla-tilt.min.js"></script>
     <script type="text/javascript">
       VanillaTilt.init(document.querySelectorAll(".skills-box"), {

@@ -16,9 +16,7 @@ window.onscroll = function(){
     }
 }
 
-
 // Hamburger
-
 const hamburger = document.querySelector('#hamburger');
 const navMenu = document.querySelector('#navbar');
 
@@ -26,6 +24,23 @@ hamburger.addEventListener('click', function() {
     hamburger.classList.toggle('hamburger-active');
     navMenu.classList.toggle('hidden');
 });
+
+// aos animation
+const mySkills = document.querySelectorAll('.my-skills');
+mySkills.forEach((img, i) => {
+  img.dataset.aos = 'fade-down';
+  img.dataset.aosDelay = i * 50;
+  img.dataset.aosDuration = 1000;
+});
+AOS.init({
+  once: true,
+});
+
+// gsap animation
+gsap.registerPlugin(TextPlugin);
+gsap.to('.lead', {duration: 3, delay: 1.5, text: 'Web Developer & Web Design'});
+gsap.from('.navbar', {duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' });
+gsap.from('.display', {duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
 
 // let navbarlinks = select('#navbar .scrollto', true) 
 // const navbarlinksActive = () => {

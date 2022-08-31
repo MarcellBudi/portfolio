@@ -16,14 +16,13 @@
 }
 
 .skills-svg {
+    transform: translate3d(0, 0, 60px);
+}
+
+.fav {
     transform: translate3d(0, 0, 40px);
 }
 
-
-.fav {
-    transform: translate3d(0, 0, 30px);
-}
-
 .text-skills {
-    transform: translate3d(-50%, 0, 30px);
+    transform: translate3d(-50%, 0, 40px);
 }
