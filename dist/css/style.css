@@ -26,3 +26,7 @@
 .text-skills {
     transform: translate3d(-50%, 0, 40px);
 }
+
+.height {
+    height: 280px;
+}
