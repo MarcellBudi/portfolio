@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- Header Start -->
-    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+    <header class="top-0 left-0 z-10 flex w-full items-center bg-gradient-to-r from-slate-100 to-blue-400 fixed">
       <div class="container">
         <div class="relative flex items-center justify-between">
           <div class="px-4 navbar">
@@ -31,22 +31,22 @@
             <nav id="navbar" class="absolute right-4 top-full hidden w-full max-w-[300px] rounded-lg bg-white py-5 shadow-lg dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent navbar">
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#home" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary duration-200 scrollto">Home</a>
+                  <a href="#home" class="mx-8 flex py-2 text-base text-dark group-hover:text-white duration-200 scrollto">Home</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary duration-200 scrollto">About Me</a>
+                  <a href="#about" class="mx-8 flex py-2 text-base text-dark group-hover:text-white duration-200 scrollto">About Me</a>
                 </li>
                 <li class="group">
-                  <a href="#portfolio" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary duration-200 scrollto">Portfolio</a>
+                  <a href="#portfolio" class="mx-8 flex py-2 text-base text-dark group-hover:text-white duration-200 scrollto">Portfolio</a>
                 </li>
                 <li class="group">
-                  <a href="#skills" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary duration-200 scrollto">Skills</a>
+                  <a href="#skills" class="mx-8 flex py-2 text-base text-dark group-hover:text-white duration-200 scrollto">Skills</a>
                 </li>
                 <li class="group">
-                  <a href="#certificate" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary duration-200 scrollto">Certificate</a>
+                  <a href="#certificate" class="mx-8 flex py-2 text-base text-dark group-hover:text-white duration-200 scrollto">Certificate</a>
                 </li>
                 <li class="group">
-                  <a href="#contact" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary duration-200 scrollto">Contact</a>
+                  <a href="#contact" class="mx-8 flex py-2 text-base text-dark group-hover:text-white duration-200 scrollto">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -257,35 +257,56 @@
             <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl">CERTIFICATE</h2>
           </div>
         </div>
-        <div class="flex flex-wrap">
+        <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
+          <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
+            <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="p-2 fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
+              <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full overflow-auto">
+                <div class="z-50">
+                  <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
+                    <svg class="fill-current text-white " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                      <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                      </path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="p-2">
+                  <img :alt="imgModalSrc" class="object-contain h-1/2-screen" :src="imgModalSrc">
+                  <p x-text="imgModalDesc" class="text-center text-white"></p>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+        <div class="flex flex-wrap" x-data="{}">
           <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3 mb-10" data-aos="zoom-in" data-aos-duration="500">
             <div class="mb-0 overflow-hidden height rounded-t-xl bg-white shadow-lg">
-              <a href="dist/img/sertifikat/Internship.jpg" class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" target="_blank"><img src="dist/img/sertifikat/Internship.jpg" alt="Certificate Praktek Kerja Industri" class="w-full"/></a>
+              <a class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Internship.jpg', imgModalDesc: '' })" class="cursor-pointer"><img src="dist/img/sertifikat/Internship.jpg" alt="Certificate Praktek Kerja Industri" class="w-full object-cover cursor-pointer object-fit"/></a>
             </div>
             <div class="py-8 px-6 rounded-b-xl bg-white shadow-lg">
               <h3>
-                <a href="dist/img/sertifikat/Internship.jpg" class="mb-2 block text-xl font-semibold text-dark hover:text-primary duration-200" target="_blank">Internship - Lina Komputer </a>
+                <a class="mb-2 block text-xl font-semibold text-dark hover:text-primary duration-200 cursor-pointer" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Internship.jpg', imgModalDesc: '' })">Internship - Lina Komputer </a>
               </h3>
               <h4 class="text-dark text-base font-semibold">December 2018 - June 2019</h4>
             </div>
           </div>
+          
           <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3 mb-10" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
             <div class="mb-0 overflow-hidden height rounded-t-xl bg-white shadow-lg">
-              <a href="dist/img/sertifikat/Junior Computer Network Technician - BNSP.jpg" class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" target="_blank"><img src="dist/img/sertifikat/Junior Computer Network Technician - BNSP.jpg" alt="Junior Computer Network Technician" class="w-full"/></a>
+              <a class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Junior Computer Network Technician - BNSP.jpg', imgModalDesc: '' })" class="cursor-pointer"><img src="dist/img/sertifikat/Junior Computer Network Technician - BNSP.jpg" alt="Junior Computer Network Technician" class="cursor-pointer w-full"/></a>
             </div>
             <div class="py-8 px-6 rounded-b-xl bg-white shadow-lg">
               <h3>
-                <a href="dist/img/sertifikat/Junior Computer Network Technician - BNSP.jpg" class="mb-2 block text-xl font-semibold text-dark hover:text-primary duration-200" target="_blank">Junior Computer Network Technician - BNSP </a>
+                <a class="mb-2 block text-xl font-semibold text-dark hover:text-primary duration-200 cursor-pointer" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Junior Computer Network Technician - BNSP.jpg', imgModalDesc: '' })">Junior Computer Network Technician - BNSP </a>
               </h3>
               <h4 class="text-dark text-base font-semibold">April 2020</h4>
             </div>
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
             <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200">
-              <a href="dist/img/sertifikat/Uji Kompetensi Keahlian.jpg" class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" target="_blank"><img src="dist/img/sertifikat/Uji Kompetensi Keahlian.jpg" alt="Uji Kompetensi Keahlian" class="w-full"/></a>
+              <a class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Uji Kompetensi Keahlian.jpg', imgModalDesc: '' })"><img src="dist/img/sertifikat/Uji Kompetensi Keahlian.jpg" alt="Uji Kompetensi Keahlian" class="cursor-pointer w-full"/></a>
               <div class="py-8 px-6">
                 <h3>
-                  <a href="dist/img/sertifikat/Uji Kompetensi Keahlian.jpg" class="mb-3 block text-xl font-semibold text-dark hover:text-primary duration-200" target="_blank">Uji Kompetensi Keahlian - SMK Negeri 1 Gianyar</a>
+                  <a class="mb-3 block text-xl font-semibold text-dark hover:text-primary duration-200 cursor-pointer" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Uji Kompetensi Keahlian.jpg', imgModalDesc: '' })">Uji Kompetensi Keahlian - SMK Negeri 1 Gianyar</a>
                 </h3>
               <h4 class="text-dark text-base font-semibold">May 2020</h4>
               </div>
@@ -293,10 +314,10 @@
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
             <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300">
-              <a href="dist/img/sertifikat/Unit Kegiatan Mahasiswa.png" class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" target="_blank"><img src="dist/img/sertifikat/Unit Kegiatan Mahasiswa.png" alt="Unit Kegiatan Mahasiswa" class="w-full"/></a>
+              <a class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Unit Kegiatan Mahasiswa.png', imgModalDesc: '' })"><img src="dist/img/sertifikat/Unit Kegiatan Mahasiswa.png" alt="Unit Kegiatan Mahasiswa" class="cursor-pointer w-full"/></a>
               <div class="py-8 px-6">
                 <h3>
-                  <a href="dist/img/sertifikat/Unit Kegiatan Mahasiswa.png" class="mb-3 block text-xl font-semibold text-dark hover:text-primary duration-200" target="_blank">Unit Kegiatan Mahasiswa Hardware & Software - INSTIKI</a>
+                  <a class="mb-3 block text-xl font-semibold text-dark hover:text-primary duration-200 cursor-pointer" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Unit Kegiatan Mahasiswa.png', imgModalDesc: '' })">Unit Kegiatan Mahasiswa Hardware & Software - INSTIKI</a>
                 </h3>
               <h4 class="text-dark text-base font-semibold">July 2021</h4>
               </div>
@@ -304,10 +325,10 @@
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
             <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="400">
-              <a href="dist/img/sertifikat/Dasar Pemrograman Web.jpg" class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" target="_blank"><img src="dist/img/sertifikat/Dasar Pemrograman Web.jpg" alt="Dasar Pemrograman Web" class="w-full"/></a>
+              <a class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Dasar Pemrograman Web.jpg', imgModalDesc: '' })"><img src="dist/img/sertifikat/Dasar Pemrograman Web.jpg" alt="Dasar Pemrograman Web" class="cursor-pointer w-full"/></a>
               <div class="py-8 px-6">
                 <h3>
-                  <a href="dist/img/sertifikat/Dasar Pemrograman Web.jpg" class="mb-3 block text-xl font-semibold text-dark hover:text-primary duration-200" target="_blank">Dasar Pemrograman Web - Dicoding Academy</a>
+                  <a class="mb-3 block text-xl font-semibold text-dark hover:text-primary duration-200 cursor-pointer" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Dasar Pemrograman Web.jpg', imgModalDesc: '' })">Dasar Pemrograman Web - Dicoding Academy</a>
                 </h3>
                 <h4 class="text-dark text-base font-semibold">July 2022</h4>
               </div>
@@ -315,10 +336,10 @@
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
             <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
-              <a href="dist/img/sertifikat/Membuat Front End Web untuk Pemula.jpg" class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" target="_blank"><img src="dist/img/sertifikat/Membuat Front End Web untuk Pemula.jpg" alt="Membuat Front End untuk Pemula" class="w-full"/></a>
+              <a class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Membuat Front End Web untuk Pemula.jpg', imgModalDesc: '' })"><img src="dist/img/sertifikat/Membuat Front End Web untuk Pemula.jpg" alt="Membuat Front End untuk Pemula" class="cursor-pointer w-full"/></a>
               <div class="py-8 px-6">
                 <h3>
-                  <a href="dist/img/sertifikat/Membuat Front End Web untuk Pemula.jpg" class="mb-3 block text-xl font-semibold text-dark hover:text-primary duration-200" target="_blank">Membuat Front End Web untuk Pemula - Dicoding Academy</a>
+                  <a class="mb-3 block text-xl font-semibold text-dark hover:text-primary duration-200 cursor-pointer" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Membuat Front End Web untuk Pemula.jpg', imgModalDesc: '' })">Membuat Front End Web untuk Pemula - Dicoding Academy</a>
                 </h3>
                 <h4 class="text-dark text-base font-semibold">July 2022</h4>
               </div>
@@ -505,6 +526,7 @@
     </a>
     <!-- Back to top End -->
 
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/TextPlugin.min.js"></script>
