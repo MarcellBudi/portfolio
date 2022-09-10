@@ -35,3 +35,7 @@
     width: 38px;
     height: 38px;
 }
+
+.border-bottom {
+    border-bottom-width: 1px;
+}
