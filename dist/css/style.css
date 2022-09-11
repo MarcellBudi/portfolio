@@ -1,15 +1,28 @@
-/* .navbar>ul>li>a:before { */
-    /* content: ""; */
-    /* position: absolute;
+.navbar a,
+.navbar a:focus {
+    transition: 0.3s;
+    position: relative;
+}
+
+.navbar>ul>li>a:before {
+    content: "";
+    position: absolute;
     width: 100%;
     height: 2px;
     bottom: -6px;
     left: 0;
     width: 0;
-    background-color: rgb(199, 80, 80);
+    background-color: #0ea5e9;
     visibility: hidden;
-    transition: all 0.3s ease-in-out 0s; */
-/* } */
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before,
+.navbar li:hover>a:before,
+.navbar .active:before {
+    visibility: visible;
+    width: 80%;
+}
 
 .skills-box {
     transform-style: preserve-3d;
