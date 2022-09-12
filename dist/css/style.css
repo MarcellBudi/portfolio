@@ -17,6 +17,11 @@
     transition: all 0.3s ease-in-out 0s;
 }
 
+.navbar a:hover,
+.navbar .active {
+  color: #0ea5e9;
+}
+
 .navbar a:hover:before,
 .navbar li:hover>a:before,
 .navbar .active:before {
@@ -61,3 +66,25 @@
     font-size: 22px;
     color: #b4b4b4;
 }
+
+
+/**
+* Mobile Navigation 
+*/
+
+/* .navbar-mobile a:hover:before,
+.navbar-mobile li:hover>a:before,
+.navbar-mobile .active:before {
+  visibility: hidden;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: #0078ff;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+} */
