@@ -42,24 +42,6 @@ gsap.to('.lead', {duration: 3, delay: 1.5, text: 'Web Developer & Web Design'});
 gsap.from('.navbar', {duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' });
 gsap.from('.display', {duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
 
-const input = document.querySelector("#email"), 
-  emailIcon = document.querySelector(".email-icon")
-
-  input.addEventListener("keyup", () =>{
-    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-
-    if(input.value === ""){
-      emailIcon.classList.replace("uil-check-circle", "uil-envelope");
-      return emailIcon.style.color = "#b4b4b4";
-    }
-    if(input.value.match(pattern)){
-      emailIcon.classList.replace("uil-envelope", "uil-check-circle");
-      return emailIcon.style.color = "#4bb543"
-    }
-    emailIcon.classList.replace("uil-check-circle", "uil-envelope");
-    emailIcon.style.color = "#de0611"
-  })
-
 (function() {
   "use strict";
 
@@ -102,4 +84,72 @@ const input = document.querySelector("#email"),
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
 
+  /**
+   * Mobile nav toggle
+   */
+   on('click', '.mobile-nav-toggle', function(e) {
+    select('#navbar').classList.toggle('navbar-mobile')
+    this.classList.toggle('bi-list')
+    this.classList.toggle('bi-x')
+  })
+
+  /**
+   * Mobile nav dropdowns activate
+   */
+  on('click', '.navbar .dropdown > a', function(e) {
+    if (select('#navbar').classList.contains('navbar-mobile')) {
+      e.preventDefault()
+      this.nextElementSibling.classList.toggle('dropdown-active')
+    }
+  }, true)
+
+  /**
+   * Scrool with ofset on links with a class name .scrollto
+   */
+  on('click', '.scrollto', function(e) {
+    if (select(this.hash)) {
+      e.preventDefault()
+
+      let navbar = select('#navbar')
+      if (navbar.classList.contains('navbar-mobile')) {
+        navbar.classList.remove('navbar-mobile')
+        let navbarToggle = select('.mobile-nav-toggle')
+        navbarToggle.classList.toggle('bi-list')
+        navbarToggle.classList.toggle('bi-x')
+      }
+      scrollto(this.hash)
+    }
+  }, true)
+
+  /**
+   * Scroll with ofset on page load with hash links in the url
+   */
+  window.addEventListener('load', () => {
+    if (window.location.hash) {
+      if (select(window.location.hash)) {
+        scrollto(window.location.hash)
+      }
+    }
+  });
+
 })()
+
+
+
+const input = document.querySelector("#email"), 
+  emailIcon = document.querySelector(".email-icon")
+
+  input.addEventListener("keyup", () =>{
+    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if(input.value === ""){
+      emailIcon.classList.replace("uil-check-circle", "uil-envelope");
+      return emailIcon.style.color = "#b4b4b4";
+    }
+    if(input.value.match(pattern)){
+      emailIcon.classList.replace("uil-envelope", "uil-check-circle");
+      return emailIcon.style.color = "#4bb543"
+    }
+    emailIcon.classList.replace("uil-check-circle", "uil-envelope");
+    emailIcon.style.color = "#de0611"
+  })
