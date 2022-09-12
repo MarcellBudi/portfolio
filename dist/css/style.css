@@ -52,3 +52,12 @@
 .border-bottom {
     border-bottom-width: 1px;
 }
+
+.input-field .email-icon {
+    position: absolute;
+    right: 30px;
+    top: 65%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: #b4b4b4;
+}

@@ -12,6 +12,9 @@
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
       <link rel="shortcut icon" href="dist/img/Logo Marcell Budi.png" type="image/x-icon">
+
+      <!-- icon email -->
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   </head>
   <body>
     <!-- Header Start -->
@@ -374,13 +377,14 @@
               <label for="name" class="text-base font-bold text-primary">Name</label>
               <input type="text" id="name" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" name="name" required/>
             </div>
-            <div class="mb-8 w-full px-4" data-aos="fade-down" data-aos-duration="500" data-aos-delay="100">
+            <div class="mb-8 w-full px-4 relative input-field" data-aos="fade-down" data-aos-duration="500" data-aos-delay="100">
               <label for="email" class="text-base font-bold text-primary">Email</label>
-              <input type="email" id="email" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" name="email" required/>
+              <input type="email" id="email" spellcheck="false" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" name="email" required/>
+              <i class="uil uil-envelope email-icon"></i>
             </div>
             <div class="mb-8 w-full px-4" data-aos="fade-down" data-aos-duration="500" data-aos-delay="200">
               <label for="message" class="text-base font-bold text-primary">Message</label>
-              <textarea type="email" id="email" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" name="message" required></textarea>
+              <textarea id="message" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" name="message" required></textarea>
             </div>
             <div class="w-full px-4">
               <button type="submit" class="w-full rounded-full bg-primary py-2.5 px-5 mr-2 text-base font-semibold text-white items-center transition duration-500 hover:opacity-80 hover:shadow-lg btn-send">
