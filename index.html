@@ -18,6 +18,17 @@
 
       <!-- bootstrap icon -->
       <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> -->
+      <style>
+        .img-container {
+          height: 300px; /* Ubah nilai ini sesuai keinginan */
+          overflow: hidden;
+        }
+        .img-container img {
+          width: 100%;
+          height: auto;
+          object-fit: cover; /* Memastikan gambar terpotong dengan proporsi yang benar */
+        }
+        </style>
   </head>
   <body>
     <!-- Header Start -->
@@ -105,10 +116,10 @@
               <h4 class="mb-4 text-lg font-bold uppercase text-primary mx-auto max-w-xl text-center">ABOUT ME</h4>
               <h3 class="mb-4 text-2xl font-semibold text-dark lg:text-3xl mx-auto max-w-xl text-center">LET'S BE FRIENDS</h3>
               <p class="mb-6 text-base font-medium text-dark lg:text-lg" data-aos="fade-right"  data-aos-duration="1000">
-                Introduce me - "Marcell Budi Putra" can be called Marcell. Born in Gianyar, on March 4, 2002 (I am now 20 years old), and now living on a beautiful island called Bali.
+                Introduce me - "Marcell Budi Putra" can be called Marcell. Born in Gianyar, on March 4, 2002 (I am now 22 years old), and now living on a beautiful island called Bali.
               </p>
 
-              <p class="mb-6 text-base font-medium text-dark lg:text-lg" data-aos="fade-right"  data-aos-duration="1000" data-aos-delay="200"> I am a 5th semester Informatics Engineering student at INSTIKI. I have experience in the IT field and follow one of the organizations on campus. Able to create websites for companies, master several programming languages such as JavaScript, PHP, MySQL. I have loved web programming since I was 18 years old, during the 12th grade of high school by creating a simple website. My dream is to become a Software Engineer. There's still a long way to go, so let's see what happens next.😉</p>
+              <p class="mb-6 text-base font-medium text-dark lg:text-lg" data-aos="fade-right"  data-aos-duration="1000" data-aos-delay="200"> I am a student majoring in Informatics Engineering at the Indonesian Institute of Business and Technology (INSTIKI), Denpasar, Bali, currently pursuing a thesis. My experience in the IT field includes an internship at a software development company as a Web Developer, where I succeeded in developing CBT application features for the Polytechnic online exam requirements and building a Motorbike Rental website for the motorbike rental process. I also act as a WordPress Developer at PT. Arcom Technology, where I develop websites for international seminars, tourist ticket services, hospital services. I have loved web programming since I was 18 years old, during the 12th grade of high school by creating a simple website. My dream is to become a Software Engineer. There's still a long way to go, so let's see what happens next.😉</p>
               <div class="flex items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                 <!-- Youtube -->
                 <a
@@ -177,38 +188,73 @@
           <div class="flex w-full flex-wrap justify-center">
             <div class="mb-10 p-4 md:w-1/2" data-aos="flip-left" data-aos-duration="500">
               <div class="overflow-hidden rounded-md shadow-md" >
-                <a href="https://github.com/MarcellBudi/website-undangan" target="_blank" class="duration-300 hover:opacity-80 hover:shadow-lg"><img src="dist/img/portfolio/website-undangan.jpg" alt="E-Commerce" width="w-full"/></a>
-              </div>
-              <a href="https://github.com/MarcellBudi/website-undangan" target="_blank"><h3 class="mt-5 mb-3 text-xl font-semibold text-dark duration-300 hover:text-primary">Website Undangan Pernikahan</h3></a>
-              <p class="text-base font-medium text-dark">Utilize: MySQL, Laravel, TailwindCSS - January 2022</p>
-            </div>
-            <div class="mb-10 p-4 md:w-1/2" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
-              <div class="overflow-hidden rounded-md shadow-md" >
                 <a href="https://ubud-info.netlify.app/" target="_blank" class="duration-300 hover:opacity-80 hover:shadow-lg"><img src="dist/img/portfolio/ubud-info.jpg" alt="Landing Page" width="w-full" /></a>
               </div>
               <a href="https://ubud-info.netlify.app/" target="_blank"><h3 class="mt-5 mb-3 text-xl font-semibold text-dark duration-300 hover:text-primary">Website Wisata Ubud</h3></a>
               <p class="text-base font-medium text-dark">Utilize: Bootstrap, JQuery - January 2022</p>
             </div>
-            <div class="mb-10 p-4 md:w-1/2" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
+            <div class="mb-10 p-4 md:w-1/2" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <div class="overflow-hidden rounded-md shadow-md" >
                 <a href="https://marcellbudi-order-makanan.netlify.app/" target="_blank" class="duration-300 hover:opacity-80 hover:shadow-lg"><img src="dist/img/portfolio/order-makanan.jpg" alt="Technical Documentation" width="w-full"/></a>
               </div>
               <a href="https://marcellbudi-order-makanan.netlify.app/" target="_blank"  ><h3 class="mt-5 mb-3 text-xl font-semibold text-dark duration-300 hover:text-primary">Website Order Makanan</h3></a>
               <p class="text-base font-medium text-dark">Utilize: HTML, CSS, JavaScript - July 2022</p>
             </div>
-            <div class="mb-10 p-4 md:w-1/2" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
+            <div class="mb-10 p-4 md:w-1/2" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <div class="overflow-hidden rounded-md shadow-md" >
                 <a href="https://marcellbudi-bookshelf-apps.netlify.app/" target="_blank" class="duration-300 hover:opacity-80 hover:shadow-lg"><img src="dist/img/portfolio/bookshelf-app.jpg" alt="Tribute Page" width="w-full"/></a>
               </div>
               <a href="https://marcellbudi-bookshelf-apps.netlify.app/" target="_blank"><h3 class="mt-5 mb-3 text-xl font-semibold text-dark transition duration-300 hover:text-primary">Bookshelf App</h3></a>
               <p class="text-base font-medium text-dark">Utilize: HTML, CSS, JavaScript - July 2022</p>
             </div>
+            <div class="mb-10 p-4 md:w-1/2" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
+              <div class="overflow-hidden rounded-md shadow-md" >
+                <a href="https://exam.poltekkes-denpasar.ac.id/login.php" target="_blank" class="duration-300 hover:opacity-80 hover:shadow-lg"><img src="dist/img/portfolio/cbt-poltek.png" alt="Tribute Page" width="w-full"/></a>
+              </div>
+              <a href="https://exam.poltekkes-denpasar.ac.id/login.php" target="_blank"><h3 class="mt-5 mb-3 text-xl font-semibold text-dark transition duration-300 hover:text-primary">CBT Poltek</h3></a>
+              <p class="text-base font-medium text-dark">Utilize: PHP, Bootstrap - Desember 2022</p>
+            </div>
+            <div class="mb-10 p-4 md:w-1/2" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
+              <div class="overflow-hidden rounded-md shadow-md" >
+                <a href="https://tours.arcomteknologi.id/rentalmotor/" target="_blank" class="duration-300 hover:opacity-80 hover:shadow-lg"><img src="dist/img/portfolio/rental-motor.png" alt="Tribute Page" width="w-full"/></a>
+              </div>
+              <a href="https://tours.arcomteknologi.id/rentalmotor/" target="_blank"><h3 class="mt-5 mb-3 text-xl font-semibold text-dark transition duration-300 hover:text-primary">Rental Motor</h3></a>
+              <p class="text-base font-medium text-dark">Utilize: Wordpress - Febuary 2023</p>
+            </div>
             <div class="mb-10 p-4 md:w-1/2" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
               <div class="overflow-hidden rounded-md shadow-md" >
-                <a href="https://github.com/MarcellBudi/website-blog-laravel" target="_blank" class="duration-300 hover:opacity-80 hover:shadow-lg"><img src="dist/img/portfolio/website-blog-laravel.jpg" alt="Tribute Page" width="w-full" /></a>
+                <a href="https://arcomteknologi.id/" target="_blank" class="duration-300 hover:opacity-80 hover:shadow-lg"><img src="dist/img/portfolio/arcom-teknologi.png" alt="Tribute Page" width="w-full" /></a>
               </div>
-              <a href="https://github.com/MarcellBudi/website-blog-laravel" target="_blank"><h3 class="mt-5 mb-3 text-xl font-semibold text-dark duration-300 hover:text-primary">Website Blog</h3></a>
-              <p class="text-base font-medium text-dark">Utilize: MySQL, Laravel, Bootstrap - August 2022</p>
+              <a href="https://arcomteknologi.id/" target="_blank"><h3 class="mt-5 mb-3 text-xl font-semibold text-dark duration-300 hover:text-primary">Arcom Teknologi</h3></a>
+              <p class="text-base font-medium text-dark">Utilize: Wordpress - April 2023</p>
+            </div>
+            <div class="mb-10 p-4 md:w-1/2" data-aos="flip-left" data-aos-duration="500" data-aos-delay="500">
+              <div class="overflow-hidden rounded-md shadow-md" >
+                <a href="https://inspire.ppb.ac.id/" target="_blank" class="duration-300 hover:opacity-80 hover:shadow-lg"><img src="dist/img/portfolio/INTERNATIONAL-CONFERENCE.png" alt="Tribute Page" width="w-full" /></a>
+              </div>
+              <a href="https://inspire.ppb.ac.id/" target="_blank"><h3 class="mt-5 mb-3 text-xl font-semibold text-dark duration-300 hover:text-primary">International Conference</h3></a>
+              <p class="text-base font-medium text-dark">Utilize: Wordpress - July 2023</p>
+            </div>
+            <div class="mb-10 p-4 md:w-1/2" data-aos="flip-left" data-aos-duration="500" data-aos-delay="600">
+              <div class="overflow-hidden rounded-md shadow-md" >
+                <a href="https://baturhotspring.com/" target="_blank" class="duration-300 hover:opacity-80 hover:shadow-lg"><img src="dist/img/portfolio/batur-hot-spring.png" alt="Tribute Page" width="w-full" /></a>
+              </div>
+              <a href="https://baturhotspring.com/" target="_blank"><h3 class="mt-5 mb-3 text-xl font-semibold text-dark duration-300 hover:text-primary">Batur Hot Spring</h3></a>
+              <p class="text-base font-medium text-dark">Utilize: Wordpress - Desember 2023</p>
+            </div>
+            <div class="mb-10 p-4 md:w-1/2" data-aos="flip-left" data-aos-duration="500" data-aos-delay="600">
+              <div class="overflow-hidden rounded-md shadow-md" >
+                <a href="https://arcomteknologi.id/rstrijata/" target="_blank" class="duration-300 hover:opacity-80 hover:shadow-lg"><img src="dist/img/portfolio/RSTRIJATA.png" alt="Tribute Page" width="w-full" /></a>
+              </div>
+              <a href="https://arcomteknologi.id/rstrijata/" target="_blank"><h3 class="mt-5 mb-3 text-xl font-semibold text-dark duration-300 hover:text-primary">RSTRIJATA</h3></a>
+              <p class="text-base font-medium text-dark">Utilize: Wordpress - Mei 2024</p>
+            </div>
+            <div class="mb-10 p-4 md:w-1/2" data-aos="flip-left" data-aos-duration="500" data-aos-delay="700">
+              <div class="overflow-hidden rounded-md shadow-md" >
+                <a href="https://nusaheritage.id/" target="_blank" class="duration-300 hover:opacity-80 hover:shadow-lg"><img src="dist/img/portfolio/nusa-heritage.png" alt="Tribute Page" width="w-full" /></a>
+              </div>
+              <a href="https://nusaheritage.id/" target="_blank"><h3 class="mt-5 mb-3 text-xl font-semibold text-dark duration-300 hover:text-primary">Nusa Heritage</h3></a>
+              <p class="text-base font-medium text-dark">Utilize: Laravel, Bootstrap - July 2024</p>
             </div>
           </div>
         </div>
@@ -221,17 +267,17 @@
         <div class="w-full px-4">
           <div class="mx-auto mb-4 text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">SKILLS</h4>
-            <h2 class="mb-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">SKILLS & TOOLS</h2>
+            <h2 class="mb-3 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">SKILLS & TOOLS</h2>
             <p class="text-md font-medium text-white md:text-lg">Skills & tools that I have</p>
           </div>
         </div>
 
-        <div class="grid grid-cols-3 md:grid-cols-5 gap-4 md:gap-6 lg:p-14 mt-7">
+        <div class="grid grid-cols-3 md:grid-cols-5 gap-4 md:gap-6 mt-7">
           <div class="my-skills"><div class="group p-5 md:p-10 rounded-md shadow-2xl relative skills-box" style="opacity: 1;"><div class="w-full tracking-widest -rotate-45 absolute -top-1 md:top-4 -left-8 md:-left-8 lg:-left-16 text-center fav"><span class="text-white font-bold text-xs md:text-base">Fav</span></div><div class="skills-svg"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48" class="w-full"><path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path></svg></div><div class="absolute bottom-1 md:bottom-2 text-xs md:text-base left-1/2 -translate-x-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-white text-skills">HTML5</div></div></div>
 
           <div class="my-skills"><div class="group p-5 md:p-10 rounded-md shadow-2xl relative skills-box" style="opacity: 1;"><div class="w-full tracking-widest -rotate-45 absolute -top-1 md:top-4 -left-8 md:-left-8 lg:-left-16 text-center fav"><span class="text-white font-bold text-xs md:text-base">Fav</span></div><div class="skills-svg"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48" class="w-full"><path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"></path><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"></path></svg></div><div class="absolute bottom-1 md:bottom-2 text-xs md:text-base left-1/2 -translate-x-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-white text-skills">CSS3</div></div></div>
 
-          <div class="my-skills"><div class="group p-5 md:p-10 rounded-md shadow-2xl relative skills-box" style="opacity: 1;"><div class="w-full tracking-widest -rotate-45 absolute -top-1 md:top-4 -left-8 md:-left-8 lg:-left-16 text-center fav"><span class="text-white font-bold text-xs md:text-base">Fav</span></div><div class="skills-svg"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48" class="w-full"><path fill="#ffd600" d="M6,42V6h36v36H6z"></path><path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"></path></svg></div><div class="absolute bottom-1 md:bottom-2 text-xs md:text-base left-1/2 -translate-x-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-white text-skills">Javascript</div></div></div>
+          <div class="my-skills"><div class="group p-5 md:p-10 rounded-md shadow-2xl relative skills-box" style="opacity: 1;"><div class="skills-svg"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48" class="w-full"><path fill="#ffd600" d="M6,42V6h36v36H6z"></path><path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"></path></svg></div><div class="absolute bottom-1 md:bottom-2 text-xs md:text-base left-1/2 -translate-x-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-white text-skills">Javascript</div></div></div>
 
           <div class="my-skills"><div class="group p-5 md:p-10 rounded-md shadow-2xl relative skills-box" style="opacity: 1;"><div class="w-full tracking-widest -rotate-45 absolute -top-1 md:top-4 -left-8 md:-left-8 lg:-left-16 text-center fav"><span class="text-white font-bold text-xs md:text-base">Fav</span></div><div class="skills-svg"><svg viewBox="0 -50 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="w-full"><defs><radialGradient id="a" cx="0.837" cy="-125.811" r="363.057" gradientTransform="matrix(.463 0 0 .463 76.464 81.918)" gradientUnits="userSpaceOnUse"><stop offset="0" style="stop-color: rgb(255, 255, 255);"></stop><stop offset="0.5" style="stop-color: rgb(76, 107, 151);"></stop><stop offset="1" style="stop-color: rgb(35, 31, 32);"></stop></radialGradient></defs><ellipse fill="url(#a)" cx="128" cy="67.3" rx="128" ry="67.3"></ellipse><ellipse fill="#6181B6" cx="128" cy="67.3" rx="123" ry="62.3"></ellipse><g fill="#FFF"><path d="m152.9 87.5 6.1-31.4c1.4-7.1.2-12.4-3.4-15.7-3.5-3.2-9.5-4.8-18.3-4.8h-10.6l3-15.6c.1-.6 0-1.2-.4-1.7s-.9-.7-1.5-.7h-14.6c-1 0-1.8.7-2 1.6l-6.5 33.3c-.6-3.8-2-7-4.4-9.6-4.3-4.9-11-7.4-20.1-7.4H52.1c-1 0-1.8.7-2 1.6L37 104.7c-.1.6 0 1.2.4 1.7s.9.7 1.5.7h14.7c1 0 1.8-.7 2-1.6l3.2-16.3h10.9c5.7 0 10.6-.6 14.3-1.8 3.9-1.3 7.4-3.4 10.5-6.3 2.5-2.3 4.6-4.9 6.2-7.7l-2.6 13.5c-.1.6 0 1.2.4 1.7s.9.7 1.5.7h14.6c1 0 1.8-.7 2-1.6l7.2-37h10c4.3 0 5.5.8 5.9 1.2.3.3.9 1.5.2 5.2L134.1 87c-.1.6 0 1.2.4 1.7s.9.7 1.5.7h15c.9-.3 1.7-1 1.9-1.9zm-67.6-26c-.9 4.7-2.6 8.1-5.1 10-2.5 1.9-6.6 2.9-12 2.9h-6.5l4.7-24.2h8.4c6.2 0 8.7 1.3 9.7 2.4 1.3 1.6 1.6 4.7.8 8.9zM215.3 42.9c-4.3-4.9-11-7.4-20.1-7.4h-28.3c-1 0-1.8.7-2 1.6l-13.1 67.5c-.1.6 0 1.2.4 1.7s.9.7 1.5.7h14.7c1 0 1.8-.7 2-1.6l3.2-16.3h10.9c5.7 0 10.6-.6 14.3-1.8 3.9-1.3 7.4-3.4 10.5-6.3 2.6-2.4 4.8-5.1 6.4-8 1.6-2.9 2.8-6.1 3.5-9.6 1.7-8.7.4-15.5-3.9-20.5zM200 61.5c-.9 4.7-2.6 8.1-5.1 10-2.5 1.9-6.6 2.9-12 2.9h-6.5l4.7-24.2h8.4c6.2 0 8.7 1.3 9.7 2.4 1.4 1.6 1.7 4.7.8 8.9z"></path></g><g fill="#000004"><path d="M74.8 48.2c5.6 0 9.3 1 11.2 3.1 1.9 2.1 2.3 5.6 1.3 10.6-1 5.2-3 9-5.9 11.2-2.9 2.2-7.3 3.3-13.2 3.3h-8.9l5.5-28.2h10zM39 105h14.7l3.5-17.9h12.6c5.6 0 10.1-.6 13.7-1.8 3.6-1.2 6.8-3.1 9.8-5.9 2.5-2.3 4.5-4.8 6-7.5s2.6-5.7 3.2-9c1.6-8 .4-14.2-3.5-18.7s-10.1-6.7-18.6-6.7H52.1L39 105zM113.3 19.6h14.6l-3.5 17.9h13c8.2 0 13.8 1.4 16.9 4.3 3.1 2.9 4 7.5 2.8 13.9L151 87.1h-14.8l5.8-29.9c.7-3.4.4-5.7-.7-6.9-1.1-1.2-3.6-1.9-7.3-1.9h-11.7l-7.5 38.7h-14.6l13.1-67.5zM189.5 48.2c5.6 0 9.3 1 11.2 3.1 1.9 2.1 2.3 5.6 1.3 10.6-1 5.2-3 9-5.9 11.2-2.9 2.2-7.3 3.3-13.2 3.3H174l5.5-28.2h10zM153.7 105h14.7l3.5-17.9h12.6c5.6 0 10.1-.6 13.7-1.8 3.6-1.2 6.8-3.1 9.8-5.9 2.5-2.3 4.5-4.8 6-7.5s2.6-5.7 3.2-9c1.6-8 .4-14.2-3.5-18.7s-10.1-6.7-18.6-6.7h-28.3L153.7 105z"></path></g></svg></div><div class="absolute bottom-1 md:bottom-2 text-xs md:text-base left-1/2 -translate-x-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-white text-skills">PHP</div></div></div>
 
@@ -241,15 +287,11 @@
 
           <div class="my-skills"><div class="group p-5 md:p-10 rounded-md shadow-2xl relative skills-box" style="opacity: 1;"><div class="w-full tracking-widest -rotate-45 absolute -top-1 md:top-4 -left-8 md:-left-8 lg:-left-16 text-center fav"><span class="text-white font-bold text-xs md:text-base">Fav</span></div><div class="skills-svg"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" x="0px" y="0px" viewBox="-10 0 264 264" class="w-full"><g><path d="M255.855641,59.619717 C255.950565,59.9710596 256,60.3333149 256,60.6972536 L256,117.265345 C256,118.743206 255.209409,120.108149 253.927418,120.843385 L206.448786,148.178786 L206.448786,202.359798 C206.448786,203.834322 205.665123,205.195421 204.386515,205.937838 L105.27893,262.990563 C105.05208,263.119455 104.804608,263.201946 104.557135,263.289593 C104.464333,263.320527 104.376687,263.377239 104.278729,263.403017 C103.585929,263.58546 102.857701,263.58546 102.164901,263.403017 C102.051476,263.372083 101.948363,263.310215 101.840093,263.26897 C101.613244,263.186479 101.376082,263.1143 101.159544,262.990563 L2.07258227,205.937838 C0.7913718,205.201819 0,203.837372 0,202.359798 L0,32.6555248 C0,32.2843161 0.0515567729,31.9234187 0.144358964,31.5728326 C0.175293028,31.454252 0.24747251,31.3459828 0.288717928,31.2274022 C0.366053087,31.0108638 0.438232569,30.7891697 0.55165747,30.5880982 C0.628992629,30.4540506 0.742417529,30.3457814 0.83521972,30.2220451 C0.953800298,30.0570635 1.06206952,29.8869261 1.20127281,29.7425672 C1.31985339,29.6239866 1.4745237,29.5363401 1.60857131,29.4332265 C1.75808595,29.3094903 1.89213356,29.1754427 2.06227091,29.0774848 L2.06742659,29.0774848 L51.6134853,0.551122364 C52.8901903,-0.183535768 54.4613221,-0.183535768 55.7380271,0.551122364 L105.284086,29.0774848 L105.294397,29.0774848 C105.459379,29.1805983 105.598582,29.3094903 105.748097,29.4280708 C105.882144,29.5311844 106.031659,29.6239866 106.15024,29.7374115 C106.294599,29.8869261 106.397712,30.0570635 106.521448,30.2220451 C106.609095,30.3457814 106.727676,30.4540506 106.799855,30.5880982 C106.918436,30.7943253 106.985459,31.0108638 107.06795,31.2274022 C107.109196,31.3459828 107.181375,31.454252 107.212309,31.5779883 C107.307234,31.9293308 107.355765,32.2915861 107.356668,32.6555248 L107.356668,138.651094 L148.643332,114.878266 L148.643332,60.6920979 C148.643332,60.3312005 148.694889,59.9651474 148.787691,59.619717 C148.823781,59.4959808 148.890804,59.3877116 148.93205,59.269131 C149.014541,59.0525925 149.08672,58.8308984 149.200145,58.629827 C149.27748,58.4957794 149.390905,58.3875102 149.478552,58.2637739 C149.602288,58.0987922 149.705401,57.9286549 149.84976,57.7842959 C149.968341,57.6657153 150.117856,57.5780688 150.251903,57.4749553 C150.406573,57.351219 150.540621,57.2171714 150.705603,57.1192136 L150.710758,57.1192136 L200.261973,28.5928511 C201.538395,27.8571345 203.110093,27.8571345 204.386515,28.5928511 L253.932573,57.1192136 C254.107866,57.2223271 254.241914,57.351219 254.396584,57.4697996 C254.525476,57.5729132 254.674991,57.6657153 254.793572,57.7791402 C254.93793,57.9286549 255.041044,58.0987922 255.16478,58.2637739 C255.257582,58.3875102 255.371007,58.4957794 255.443187,58.629827 C255.561767,58.8308984 255.628791,59.0525925 255.711282,59.269131 C255.757683,59.3877116 255.824707,59.4959808 255.855641,59.619717 Z M247.740605,114.878266 L247.740605,67.8378666 L230.402062,77.8192579 L206.448786,91.6106946 L206.448786,138.651094 L247.745761,114.878266 L247.740605,114.878266 Z M198.194546,199.97272 L198.194546,152.901386 L174.633101,166.357704 L107.351512,204.757188 L107.351512,252.27191 L198.194546,199.97272 Z M8.25939501,39.7961379 L8.25939501,199.97272 L99.0921175,252.266755 L99.0921175,204.762344 L51.6392637,177.906421 L51.6237967,177.89611 L51.603174,177.885798 C51.443348,177.792996 51.3093004,177.658949 51.1597857,177.545524 C51.0308938,177.44241 50.8813791,177.359919 50.7679542,177.246494 L50.7576429,177.231027 C50.6235953,177.102135 50.5307931,176.942309 50.4173682,176.79795 C50.3142546,176.658747 50.1905184,176.540167 50.1080276,176.395808 L50.1028719,176.380341 C50.0100697,176.22567 49.9533572,176.040066 49.8863334,175.864773 C49.8193096,175.710103 49.7316631,175.565744 49.6904177,175.400762 L49.6904177,175.395606 C49.6388609,175.19969 49.6285496,174.993463 49.6079269,174.792392 C49.5873041,174.637722 49.5460587,174.483051 49.5460587,174.328381 L49.5460587,174.31807 L49.5460587,63.5689658 L25.5979377,49.7723734 L8.25939501,39.8012935 L8.25939501,39.7961379 Z M53.6809119,8.89300821 L12.3994039,32.6555248 L53.6706006,56.4180414 L94.9469529,32.6503692 L53.6706006,8.89300821 L53.6809119,8.89300821 Z M75.1491521,157.19091 L99.0972731,143.404629 L99.0972731,39.7961379 L81.7587304,49.7775291 L57.8054537,63.5689658 L57.8054537,167.177457 L75.1491521,157.19091 Z M202.324244,36.934737 L161.047891,60.6972536 L202.324244,84.4597702 L243.59544,60.6920979 L202.324244,36.934737 Z M198.194546,91.6106946 L174.24127,77.8192579 L156.902727,67.8378666 L156.902727,114.878266 L180.850848,128.664547 L198.194546,138.651094 L198.194546,91.6106946 Z M103.216659,197.616575 L163.759778,163.052915 L194.023603,145.781396 L152.778185,122.034346 L105.289242,149.374903 L62.0073307,174.292291 L103.216659,197.616575 Z" fill="#FF2D20"></path></g></svg></div><div class="absolute bottom-1 md:bottom-2 text-xs md:text-base left-1/2 -translate-x-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-white text-skills">Laravel</div></div></div>
 
-          <div class="my-skills"><div class="group p-5 md:p-10 rounded-md shadow-2xl relative skills-box" style="opacity: 1;"><div class="skills-svg"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48"><path fill="#F44336" d="M23.65,24.898c-0.998-1.609-1.722-2.943-2.725-5.455C19.229,15.2,31.24,11.366,26.37,3.999c2.111,5.089-7.577,8.235-8.477,12.473C17.07,20.37,23.645,24.898,23.65,24.898z"/><path fill="#F44336" d="M23.878,17.27c-0.192,2.516,2.229,3.857,2.299,5.695c0.056,1.496-1.447,2.743-1.447,2.743s2.728-0.536,3.579-2.818c0.945-2.534-1.834-4.269-1.548-6.298c0.267-1.938,6.031-5.543,6.031-5.543S24.311,11.611,23.878,17.27z"/><g><path fill="#1565C0" d="M32.084 25.055c1.754-.394 3.233.723 3.233 2.01 0 2.901-4.021 5.643-4.021 5.643s6.225-.742 6.225-5.505C37.521 24.053 34.464 23.266 32.084 25.055zM29.129 27.395c0 0 1.941-1.383 2.458-1.902-4.763 1.011-15.638 1.147-15.638.269 0-.809 3.507-1.638 3.507-1.638s-7.773-.112-7.773 2.181C11.683 28.695 21.858 28.866 29.129 27.395z"/><path fill="#1565C0" d="M27.935,29.571c-4.509,1.499-12.814,1.02-10.354-0.993c-1.198,0-2.974,0.963-2.974,1.889c0,1.857,8.982,3.291,15.63,0.572L27.935,29.571z"/><path fill="#1565C0" d="M18.686,32.739c-1.636,0-2.695,1.054-2.695,1.822c0,2.391,9.76,2.632,13.627,0.205l-2.458-1.632C24.271,34.404,17.014,34.579,18.686,32.739z"/><path fill="#1565C0" d="M36.281,36.632c0-0.936-1.055-1.377-1.433-1.588c2.228,5.373-22.317,4.956-22.317,1.784c0-0.721,1.807-1.427,3.477-1.093l-1.42-0.839C11.26,34.374,9,35.837,9,37.017C9,42.52,36.281,42.255,36.281,36.632z"/><path fill="#1565C0" d="M39,38.604c-4.146,4.095-14.659,5.587-25.231,3.057C24.341,46.164,38.95,43.628,39,38.604z"/></g></svg></div><div class="absolute bottom-1 md:bottom-2 text-xs md:text-base left-1/2 -translate-x-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-white text-skills">Java</div></div></div>
+          <div class="my-skills"><div class="group p-5 md:p-10 rounded-md shadow-2xl relative skills-box" style="opacity: 1;"><div class="w-full tracking-widest -rotate-45 absolute -top-1 md:top-4 -left-8 md:-left-8 lg:-left-16 text-center fav"><span class="text-white font-bold text-xs md:text-base">Fav</span></div><div class="skills-svg"><svg xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" viewBox="0 0 48 48"><path fill="#fff" d="M24 4.050000000000001A19.95 19.95 0 1 0 24 43.95A19.95 19.95 0 1 0 24 4.050000000000001Z"/><path fill="#01579b" d="M8.001,24c0,6.336,3.68,11.806,9.018,14.4L9.385,17.488C8.498,19.479,8.001,21.676,8.001,24z M34.804,23.194c0-1.977-1.063-3.35-1.67-4.412c-0.813-1.329-1.576-2.437-1.576-3.752c0-1.465,1.471-2.84,3.041-2.84 c0.071,0,0.135,0.006,0.206,0.008C31.961,9.584,28.168,8,24.001,8c-5.389,0-10.153,2.666-13.052,6.749 c0.228,0.074,0.307,0.039,0.611,0.039c1.669,0,4.264-0.2,4.264-0.2c0.86-0.057,0.965,1.212,0.099,1.316c0,0-0.864,0.105-1.828,0.152 l5.931,17.778l3.5-10.501l-2.603-7.248c-0.861-0.046-1.679-0.152-1.679-0.152c-0.862-0.056-0.762-1.375,0.098-1.316 c0,0,2.648,0.2,4.217,0.2c1.675,0,4.264-0.2,4.264-0.2c0.861-0.057,0.965,1.212,0.104,1.316c0,0-0.87,0.105-1.832,0.152l5.891,17.61 l1.599-5.326C34.399,26.289,34.804,24.569,34.804,23.194z M24.281,25.396l-4.8,13.952c1.436,0.426,2.95,0.652,4.52,0.652 c1.861,0,3.649-0.324,5.316-0.907c-0.04-0.071-0.085-0.143-0.118-0.22L24.281,25.396z M38.043,16.318 c0.071,0.51,0.108,1.059,0.108,1.645c0,1.628-0.306,3.451-1.219,5.737l-4.885,14.135C36.805,35.063,40,29.902,40,24 C40,21.219,39.289,18.604,38.043,16.318z"/><path fill="#01579b" d="M4,24c0,11.024,8.97,20,19.999,20C35.03,44,44,35.024,44,24S35.03,4,24,4S4,12.976,4,24z M5.995,24 c0-9.924,8.074-17.999,18.004-17.999S42.005,14.076,42.005,24S33.929,42.001,24,42.001C14.072,42.001,5.995,33.924,5.995,24z"/></svg></div><div class="absolute bottom-1 md:bottom-2 text-xs md:text-base left-1/2 -translate-x-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-white text-skills">Javascript</div></div></div>
 
           <div class="my-skills"><div class="group p-5 md:p-10 rounded-md shadow-2xl relative skills-box" style="opacity: 1;"><div class="w-full tracking-widest -rotate-45 absolute -top-1 md:top-4 -left-8 md:-left-8 lg:-left-16 text-center fav"><span class="text-white font-bold text-xs md:text-base">Fav</span></div><div class="skills-svg"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48"><path fill="#29b6f6" d="M44,11.11v25.78c0,1.27-0.79,2.4-1.98,2.82l-8.82,4.14L34,33V15L33.2,4.15l8.82,4.14 C43.21,8.71,44,9.84,44,11.11z"></path><path fill="#0277bd" d="M9,33.896L34,15V5.353c0-1.198-1.482-1.758-2.275-0.86L4.658,29.239 c-0.9,0.83-0.849,2.267,0.107,3.032c0,0,1.324,1.232,1.803,1.574C7.304,34.37,8.271,34.43,9,33.896z"></path><path fill="#0288d1" d="M9,14.104L34,33v9.647c0,1.198-1.482,1.758-2.275,0.86L4.658,18.761 c-0.9-0.83-0.849-2.267,0.107-3.032c0,0,1.324-1.232,1.803-1.574C7.304,13.63,8.271,13.57,9,14.104z"></path></svg></div><div class="absolute bottom-1 md:bottom-2 text-xs md:text-base left-1/2 -translate-x-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-white text-skills">VSCode</div></div></div>
 
-          <div class="my-skills"><div class="group p-5 md:p-10 rounded-md shadow-2xl relative skills-box" style="opacity: 1;"><div class="w-full tracking-widest -rotate-45 absolute -top-1 md:top-4 -left-8 md:-left-8 lg:-left-16 text-center fav"><span class="text-white font-bold text-xs md:text-base">Fav</span></div><div class="skills-svg"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48"><path fill="#F4511E" d="M42.2,22.1L25.9,5.8C25.4,5.3,24.7,5,24,5c0,0,0,0,0,0c-0.7,0-1.4,0.3-1.9,0.8l-3.5,3.5l4.1,4.1c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3c0,0.5-0.1,0.9-0.3,1.3l4,4c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3s-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-0.5,0.1-0.9,0.3-1.3l-4-4c-0.1,0-0.2,0.1-0.3,0.1v10.4c1.2,0.4,2,1.5,2,2.8c0,1.7-1.3,3-3,3s-3-1.3-3-3c0-1.3,0.8-2.4,2-2.8V18.8c-1.2-0.4-2-1.5-2-2.8c0-0.5,0.1-0.9,0.3-1.3l-4.1-4.1L5.8,22.1C5.3,22.6,5,23.3,5,24c0,0.7,0.3,1.4,0.8,1.9l16.3,16.3c0,0,0,0,0,0c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8l16.3-16.3c0.5-0.5,0.8-1.2,0.8-1.9C43,23.3,42.7,22.6,42.2,22.1z"></path></svg></div><div class="absolute bottom-1 md:bottom-2 text-xs md:text-base left-1/2 -translate-x-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-white text-skills">Git</div></div></div>
-
-          <div class="my-skills"><div class="group p-5 md:p-10 rounded-md shadow-2xl relative skills-box" style="opacity: 1;"><div class="skills-svg"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48" style=" fill:#000000;"><path fill="#ff41c8" d="M6,10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28c0,2.209-1.791,4-4,4H10c-2.209,0-4-1.791-4-4 V10z"></path><path fill="#16020b" d="M9,9v30h30V9H9z M19.093,21.695l1.914-4.883h3.291l-3.34,7.051l3.418,7.168h-3.33l-1.953-4.971 l-1.943,4.971h-3.33l3.418-7.168l-3.35-7.051h3.291L19.093,21.695z M25.069,25.426c0-1.732,0.293-3.024,0.879-3.877 s1.438-1.279,2.559-1.279c0.813,0,1.491,0.352,2.031,1.055v-5.293h2.783v15h-2.51l-0.127-1.074c-0.566,0.847-1.296,1.27-2.188,1.27 c-1.106,0-1.951-0.423-2.534-1.27s-0.881-2.09-0.894-3.73V25.426z M27.843,26.119c0,1.042,0.11,1.77,0.332,2.183 s0.596,0.62,1.123,0.62c0.547,0,0.96-0.244,1.24-0.732v-4.824c-0.273-0.521-0.684-0.781-1.23-0.781 c-0.508,0-0.879,0.205-1.113,0.615s-0.352,1.14-0.352,2.188V26.119z"></path></svg></div><div class="absolute bottom-1 md:bottom-2 text-xs md:text-base left-1/2 -translate-x-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-white text-skills">Adobe XD</div></div></div>
-
-          <div class="my-skills"><div class="group p-5 md:p-10 rounded-md shadow-2xl relative skills-box" style="opacity: 1;"><div class="skills-svg"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48"><path fill="#03A9F4" d="M6,10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28c0,2.209-1.791,4-4,4H10c-2.209,0-4-1.791-4-4V10z"></path><path fill="#020F16" d="M20.016,19.174h-2.002v4.434h1.973c0.547,0,0.97-0.179,1.27-0.537s0.449-0.879,0.449-1.563c0-0.71-0.153-1.274-0.459-1.694S20.53,19.181,20.016,19.174z"></path><path fill="#020F16" d="M9,9v30h30V9H9z M23.365,24.789C22.539,25.597,21.393,26,19.928,26h-1.914v5h-2.871V16.781h4.844c1.406,0,2.528,0.437,3.364,1.309s1.255,2.005,1.255,3.398S24.192,23.981,23.365,24.789z M32.682,30.336c-0.709,0.573-1.641,0.859-2.793,0.859c-0.775,0-1.459-0.151-2.051-0.454s-1.057-0.725-1.392-1.265s-0.503-1.123-0.503-1.748h2.627c0.014,0.481,0.125,0.843,0.337,1.084s0.558,0.361,1.04,0.361c0.742,0,1.113-0.335,1.113-1.006c0-0.234-0.112-0.451-0.337-0.649S30,27.052,29.225,26.713c-1.139-0.462-1.922-0.94-2.349-1.436s-0.64-1.11-0.64-1.846c0-0.925,0.334-1.688,1.001-2.29s1.552-0.903,2.651-0.903c1.158,0,2.086,0.3,2.783,0.898s1.045,1.403,1.045,2.412h-2.764c0-0.859-0.357-1.289-1.074-1.289c-0.293,0-0.533,0.091-0.723,0.273s-0.283,0.437-0.283,0.762c0,0.234,0.104,0.441,0.313,0.62s0.699,0.435,1.475,0.767c1.127,0.417,1.922,0.881,2.388,1.392s0.698,1.174,0.698,1.987C33.746,29.005,33.391,29.763,32.682,30.336z"></path></svg></div><div class="absolute bottom-1 md:bottom-2 text-xs md:text-base left-1/2 -translate-x-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-white text-skills">Photoshop</div></div></div>
+          <div class="my-skills"><div class="group p-5 md:p-10 rounded-md shadow-2xl relative skills-box" style="opacity: 1;"><div class="skills-svg"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48"><path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"/><path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"/><path fill="#66bb6a" d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"/><path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"/><circle cx="32" cy="24" r="7" fill="#29b6f6"/></svg></div><div class="absolute bottom-1 md:bottom-2 text-xs md:text-base left-1/2 -translate-x-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-white text-skills">Figma</div></div></div>
         </div>
       </div>
     </section>
@@ -285,51 +327,7 @@
           </template>
         </div>
         <div class="flex flex-wrap" x-data="{}">
-          <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3 mb-10" data-aos="zoom-in" data-aos-duration="500">
-            <div class="mb-0 overflow-hidden height rounded-t-xl bg-white shadow-lg">
-              <a class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Internship.jpg', imgModalDesc: '' })" class="cursor-pointer"><img src="dist/img/sertifikat/Internship.jpg" alt="Certificate Praktek Kerja Industri" class="w-full object-cover cursor-pointer object-fit"/></a>
-            </div>
-            <div class="py-8 px-6 rounded-b-xl bg-white shadow-lg">
-              <h3>
-                <a class="mb-2 block text-xl font-semibold text-dark hover:text-primary duration-200 cursor-pointer" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Internship.jpg', imgModalDesc: '' })">Internship - Lina Komputer </a>
-              </h3>
-              <h4 class="text-dark text-base font-semibold">December 2018 - June 2019</h4>
-            </div>
-          </div>
           
-          <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3 mb-10" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
-            <div class="mb-0 overflow-hidden height rounded-t-xl bg-white shadow-lg">
-              <a class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Junior Computer Network Technician - BNSP.jpg', imgModalDesc: '' })" class="cursor-pointer"><img src="dist/img/sertifikat/Junior Computer Network Technician - BNSP.jpg" alt="Junior Computer Network Technician" class="cursor-pointer w-full"/></a>
-            </div>
-            <div class="py-8 px-6 rounded-b-xl bg-white shadow-lg">
-              <h3>
-                <a class="mb-2 block text-xl font-semibold text-dark hover:text-primary duration-200 cursor-pointer" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Junior Computer Network Technician - BNSP.jpg', imgModalDesc: '' })">Junior Computer Network Technician - BNSP </a>
-              </h3>
-              <h4 class="text-dark text-base font-semibold">April 2020</h4>
-            </div>
-          </div>
-          <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200">
-              <a class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Uji Kompetensi Keahlian.jpg', imgModalDesc: '' })"><img src="dist/img/sertifikat/Uji Kompetensi Keahlian.jpg" alt="Uji Kompetensi Keahlian" class="cursor-pointer w-full"/></a>
-              <div class="py-8 px-6">
-                <h3>
-                  <a class="mb-3 block text-xl font-semibold text-dark hover:text-primary duration-200 cursor-pointer" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Uji Kompetensi Keahlian.jpg', imgModalDesc: '' })">Uji Kompetensi Keahlian - SMK Negeri 1 Gianyar</a>
-                </h3>
-              <h4 class="text-dark text-base font-semibold">May 2020</h4>
-              </div>
-            </div>
-          </div>
-          <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300">
-              <a class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Unit Kegiatan Mahasiswa.png', imgModalDesc: '' })"><img src="dist/img/sertifikat/Unit Kegiatan Mahasiswa.png" alt="Unit Kegiatan Mahasiswa" class="cursor-pointer w-full"/></a>
-              <div class="py-8 px-6">
-                <h3>
-                  <a class="mb-3 block text-xl font-semibold text-dark hover:text-primary duration-200 cursor-pointer" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Unit Kegiatan Mahasiswa.png', imgModalDesc: '' })">Unit Kegiatan Mahasiswa Hardware & Software - INSTIKI</a>
-                </h3>
-              <h4 class="text-dark text-base font-semibold">July 2021</h4>
-              </div>
-            </div>
-          </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
             <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="400">
               <a class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Dasar Pemrograman Web.jpg', imgModalDesc: '' })"><img src="dist/img/sertifikat/Dasar Pemrograman Web.jpg" alt="Dasar Pemrograman Web" class="cursor-pointer w-full"/></a>
@@ -376,12 +374,60 @@
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
             <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+              <a class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Sertifikat Magang ARTECH_page-0002.jpg', imgModalDesc: '' })"><img src="dist/img/sertifikat/Sertifikat Magang ARTECH_page-0002.jpg" alt="It Specialist Database" class="cursor-pointer w-full"/></a>
+              <div class="py-8 px-6">
+                <h3>
+                  <a class="mb-3 block text-xl font-semibold text-dark hover:text-primary duration-200 cursor-pointer" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Sertifikat Magang ARTECH_page-0002.jpg', imgModalDesc: '' })">It Sertifikat Magang</a>
+                </h3>
+                <h4 class="text-dark text-base font-semibold">October 2022</h4>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
               <a class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Belajar Membuat Aplikasi Back-End untuk Pemula.jpg', imgModalDesc: '' })"><img src="dist/img/sertifikat/Belajar Membuat Aplikasi Back-End untuk Pemula.jpg" alt="Belajar Membuat Aplikasi Back-End untuk Pemula" class="cursor-pointer w-full"/></a>
               <div class="py-8 px-6">
                 <h3>
                   <a class="mb-3 block text-xl font-semibold text-dark hover:text-primary duration-200 cursor-pointer" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/Belajar Membuat Aplikasi Back-End untuk Pemula.jpg', imgModalDesc: '' })">Belajar Membuat Aplikasi Back-End untuk Pemula</a>
                 </h3>
                 <h4 class="text-dark text-base font-semibold">April 2023</h4>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+              <a class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/MOS-Excel-marcell.jpg', imgModalDesc: '' })"><img src="dist/img/sertifikat/MOS-Excel-marcell.jpg" alt="Microsoft Office Specialist Excel" class="cursor-pointer w-full"/></a>
+              <div class="py-8 px-6">
+                <h3>
+                  <a class="mb-3 block text-xl font-semibold text-dark hover:text-primary duration-200 cursor-pointer" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/MOS-Excel-marcell.jpg', imgModalDesc: '' })">Microsoft Office Specialist Excel</a>
+                </h3>
+                <h4 class="text-dark text-base font-semibold">July 2023</h4>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+              <a class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/udemy-marcell.jpg', imgModalDesc: '' })"><img src="dist/img/sertifikat/udemy-marcell.jpg" alt="Microsoft Office Specialist Excel" class="cursor-pointer w-full"/></a>
+              <div class="py-8 px-6">
+                <h3>
+                  <a class="mb-3 block text-xl font-semibold text-dark hover:text-primary duration-200 cursor-pointer" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/udemy-marcell.jpg', imgModalDesc: '' })">Kursus Laravel : Pemula sampai Mahir</a>
+                </h3>
+                <h4 class="text-dark text-base font-semibold">July 2023</h4>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+              <a class="transition duration-500 hover:opacity-80 hover:shadow-lg portfolio-lightbox" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/toeic-marcell.jpg', imgModalDesc: '' })">
+                <div class="img-container">
+                  <img src="dist/img/sertifikat/toeic-marcell.jpg" alt="Test of English for International Communication (TOEIC)" class="cursor-pointer w-full"/>
+                </div>
+              </a>
+              <div class="py-8 px-6">
+                <h3>
+                  <a class="mb-3 block text-xl font-semibold text-dark hover:text-primary duration-200 cursor-pointer" @click="$dispatch('img-modal', {  imgModalSrc: 'dist/img/sertifikat/toeic-marcell.jpg', imgModalDesc: '' })">Test of English for International Communication (TOEIC)</a>
+                </h3>
+                <h4 class="text-dark text-base font-semibold">Juni 2024</h4>
               </div>
             </div>
           </div>
