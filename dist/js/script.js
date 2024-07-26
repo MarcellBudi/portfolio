@@ -38,9 +38,9 @@ AOS.init({
 
 // gsap animation
 gsap.registerPlugin(TextPlugin);
-gsap.to('.lead', {duration: 3, delay: 1.5, text: 'Web Developer & Web Design'});
-gsap.from('.navbar', {duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' });
-gsap.from('.display', {duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
+gsap.to('.lead', {duration: 3, delay: 2, text: 'Web Developer & Web Design'});
+gsap.from('.navbar', {duration: 3, y: '-100%', opacity: 0, ease: 'bounce' });
+gsap.from('.display', {duration: 2, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
 
 (function() {
   "use strict";
