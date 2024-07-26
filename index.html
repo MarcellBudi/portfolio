@@ -30,6 +30,7 @@
 
       <!-- icon email -->
       <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
       <style>
         .img-container {
@@ -41,9 +42,69 @@
           height: auto;
           object-fit: cover; 
         }
+        /* Tambahkan CSS untuk menyembunyikan preloader setelah halaman dimuat */
+        body.loaded #preloader {
+          display: none;
+      }
+
+      /* Animasi titik-titik */
+      @keyframes dot-flashing {
+          0% {
+              background-color: #0EA5E9;
+          }
+          50%,
+          100% {
+              background-color: #fff;
+          }
+      }
+
+      .dot-flashing {
+          position: relative;
+          width: 16px; /* Ukuran diperbesar */
+          height: 16px; /* Ukuran diperbesar */
+          border-radius: 50%;
+          background-color: #0EA5E9;
+          color: #0EA5E9;
+          animation: dot-flashing 1s infinite linear alternate;
+          animation-delay: 0.5s;
+      }
+
+      .dot-flashing::before,
+      .dot-flashing::after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 0;
+      }
+
+      .dot-flashing::before {
+          left: -24px; /* Jarak diperbesar */
+          width: 16px; /* Ukuran diperbesar */
+          height: 16px; /* Ukuran diperbesar */
+          border-radius: 50%;
+          background-color: #0EA5E9;
+          color: #0EA5E9;
+          animation: dot-flashing 1s infinite alternate;
+          animation-delay: 0s;
+      }
+
+      .dot-flashing::after {
+          left: 24px; /* Jarak diperbesar */
+          width: 16px; /* Ukuran diperbesar */
+          height: 16px; /* Ukuran diperbesar */
+          border-radius: 50%;
+          background-color: #0EA5E9;
+          color: #0EA5E9;
+          animation: dot-flashing 1s infinite alternate;
+          animation-delay: 1s;
+      }
         </style>
   </head>
   <body>
+    <div id="preloader" class="fixed inset-0 bg-gray-100 flex items-center justify-center z-50">
+      <div class="dot-flashing"></div>
+  </div>
+  <div class="content">
     <!-- Header Start -->
     <header class="top-0 left-0 z-10 flex w-full items-center bg-white border-bottom fixed">
       <div class="container">
@@ -633,12 +694,23 @@
       <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
     </a>
     <!-- Back to top End -->
+  </div>
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/TextPlugin.min.js"></script>
     <script src="dist/js/script.js"></script>
+
+    <script>
+      // Tambahkan JavaScript untuk menyembunyikan preloader setelah halaman selesai dimuat
+      window.addEventListener('load', function () {
+          // Tambahkan jeda waktu sebelum menghilangkan preloader
+          setTimeout(function() {
+              document.body.classList.add('loaded');
+          }, 2000); // Jeda waktu dalam milidetik (2000 milidetik = 2 detik)
+      });
+  </script>
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxlMlQKuT3B8NSM5KEfB_ykvuEJBRYbTAdttxLKOqEm9QKFMJ6URu15ucRYumje1RFu/exec'
